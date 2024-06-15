@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  --primary-color: #009579;
+  --primary-color-dark: #007f67;
+  --error-color: #cc3333;
+  --success-color: #4bb544;
+  --secondary-color: #0471ed;
+  --border-radius: 4px;
+  --white-color: #ffffff;
+  background-image: url('./img/bg-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  /* background: linear-gradient(
+              to bottom, 
+              rgba(0, 0, 0, 0.5), 
+              rgba(0, 0, 0, 0.1)
+            ),
+            linear-gradient(
+              to right, 
+              rgba(255, 255, 255, 0.3), 
+              rgba(255, 255, 255, 0.1)
+            ),
+            url('./img/bg-img.jpg'); */
+
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  /* background: var(--primary-color-dark); */
+}
+
+.main-container {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+.logo {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.logo img {
+  width: 20%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*--------------------------- Container --------------------------*/
+.container {
+  width: 40%;
+  position: relative;
+  margin: 3rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+}
+
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.error{
+  font-size: 14px;
+  color: red;
+  margin-top: 9px;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: Center;
+  padding: 1.5rem;
+  text-transform: capitalize;
+}
+
+.form-input-wrapper {
+  margin-bottom: 1rem;
+}
+
+.input-item {
+  display: block;
+  background: aliceblue;
+  border: 2px solid #f4f4f4;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.input-item::placeholder {
+  font-size: 0.85rem;
+}
+
+.input-item:focus {
+  border-color: rgb(209, 223, 235);
+  background: var(--white-color);
+}
+
+.form__input-error {
+  color: var(--error-color);
+  border-color: var(--error-color) !important;
+}
+
+.form_input-error__message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--error-color);
+}
+
+.form-btn {
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  margin: 1rem auto;
+  border-radius: var(--border-radius);
+}
+
+.form-btn :hover {
+  background: var(--primary-color-dark);
+}
+
+.form-btn:active {
+  transform: scale(0.98);
+}
+
+.form-text {
+  text-align: Center;
+  padding: 1rem 0;
+  color: #555;
+}
+
+.form-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+/*=========================== .footer-container ========================*/
+.footer-container {
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-row i.fab {
+  color: #333;
+  margin: 12px;
+  font-size: 1.1rem;
+}
+
+/*=================== .copyright =========================*/
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/*======================== On Mobile devices =====================*/
+@media only screen and (max-width: 450px) {
+  .logo img {
+    width: 48%;
+    margin: 1rem auto;
+  }
+
+  /*--------------------------- Container --------------------------*/
+  .container {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .input-item {
+    font-size: 13px;
+  }
+
+  /*=========================== .footer-container ========================*/
+  .footer-container {
+    margin: 0 auto;
+    padding: 3rem;
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    padding: 2rem auto;
+  }
+}

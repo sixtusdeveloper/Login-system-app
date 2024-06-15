@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login system app</title>
+
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="logo"><img src="./img/sixtus-logo.png" alt="Logo" /></div>
+      <div class="container">
+        <!------------------------- SECOND FORM ---------------------------->
+
+        <form class="form" id="signupForm">
+          <h1 class="form-title">Create Account</h1>
+          <div class="form-message form-message-error"></div>
+          <div class="form-input-wrapper">
+            <input
+              type="text"
+              class="input-item"
+              id="name"
+              autofocus
+              autocomplete="on"
+              placeholder="Name"
+            />
+            <span id="nameError" class="error"></span>
+          </div>
+
+          <div class="form-input-wrapper">
+            <input
+              type="email"
+              class="input-item"
+              id="email"
+              autofocus
+              autocomplete="on"
+              placeholder="Email Address"
+            />
+            <span id="emailError" class="error"></span>
+          </div>
+
+          <!---------------------- This is an error message! ---------------------->
+          <div class="form-input-wrapper">
+            <input
+              type="password"
+              class="input-item"
+              id="password"
+              autofocus
+              autocomplete="on"
+              placeholder="Password"
+            />
+            <span id="passwordError" class="error"></span>
+          </div>
+
+          <div class="form-input-wrapper">
+            <input
+              type="password"
+              class="input-item"
+              id="confirmPassword"
+              autofocus
+              autocomplete="on"
+              placeholder="Comfirm password"
+            />
+            <span id="confirmPasswordError" class="error"></span>
+          </div>
+
+          <button class="form-btn" id="submitBtn" type="submit">Sign up</button>
+
+          <p class="form-text">
+            Already have an Account?
+            <a href="" id="linkLogin" class="form-link"> Login in </a>
+          </p>
+  
+        </form>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer-container">
+      <div class="footer-row">
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://www.facebook.com/sixtusushrey"
+        >
+          <i class="fab fa-facebook social-icons"></i>
+        </a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://www.instagram.com/sixtusushrey"
+        >
+          <i class="fab fa-instagram social-icons"></i>
+        </a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://twitter.com/SixtusUshahemba"
+        >
+          <i class="fab fa-twitter social-icons"></i>
+        </a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://github.com/Sixtusdeveloper/"
+        >
+          <i class="fab fa-github social-icons"></i>
+        </a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/sixtusushrey"
+        >
+          <i class="fab fa-linkedin social-icons"></i>
+        </a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://www.pinterest.com/sixtusushrey"
+        >
+          <i class="fab fa-pinterest social-icons"></i>
+        </a>
+      </div>
+
+      <div class="copyright">
+        <div class="flex-copyright">
+          Copyright&copy; - 2024 Created By&nbsp;
+          <span style="color: green">Sixtusdev</span>&nbsp;| &nbsp;All Rights
+          Reserved | Terms & Policy
+        </div>
+      </div>
+    </footer>
+
+    <script src="./JS/App.js"></script>
+  </body>
+</html>

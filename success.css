@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo img {
+  width: 30%;
+  margin: 1rem auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.success-msg {
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.success-msg > .span {
+  padding: 13px;
+}
+
+.success-msg .span > i.fas {
+  font-size: 3rem;
+  color: green;
+  padding: 14px;
+}
+
+.success-msg h1 {
+  font-size: 2rem;
+  color: #333;
+  padding: 14px;
+}
+.success-msg p {
+  font-size: 15px;
+  color: #555;
+  padding: 14px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  text-align: center;
+  text-decoration: none;
+  background: green;
+  width: 40%;
+  border: none;
+  border-radius: 26px;
+}
+
+a button {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  background: inherit;
+  outline: none;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 26px;
+  padding: 10px 14px;
+}
+
+/*====================== On mobile devices ==========================*/
+@media only screen and (max-width: 450px) {
+  .logo img {
+    width: 50%;
+  }
+}
