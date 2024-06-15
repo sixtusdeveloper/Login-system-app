@@ -12,11 +12,13 @@ body {
   --secondary-color: #0471ed;
   --border-radius: 4px;
   --white-color: #ffffff;
-  background-image: url('./img/bg-img.jpg');
+  /* background-image: url('./img/bg-img.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: local;
-  background-size: cover;
+  background-size: cover; */
+  background-color: black;
+
   /* background: linear-gradient(
               to bottom, 
               rgba(0, 0, 0, 0.5), 
