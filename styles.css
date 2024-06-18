@@ -208,6 +208,21 @@ h2{
 }
 
 /*======================== On Mobile devices =====================*/
+@media only screen and (max-width: 850px) {
+ 
+/*--------------------------- Container --------------------------*/
+.container {
+  width: 60%;
+  position: relative;
+  margin: 3rem auto;
+  padding: 1rem 2.7rem;
+  background: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+}
+}
+
+/*======================== On Mobile devices =====================*/
 @media only screen and (max-width: 450px) {
   .logo img {
     width: 48%;
@@ -237,3 +252,5 @@ h2{
     padding: 2rem auto;
   }
 }
+
+
