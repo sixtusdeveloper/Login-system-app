@@ -53,6 +53,14 @@ h2{
   /* overflow-x: hidden; */
 }
 
+.main-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
 .logo {
   text-align: center;
   margin: 1rem auto;

@@ -20,70 +20,74 @@
       <div class="logo"><img src="./img/sixtus-logo.png" alt="Logo" /></div>
        <h1>Experience the Magic of JavaScript!</h1>
        <h2>Login system by Sixtusdev</h2>
-      <div class="container">
-        <!------------------------- SECOND FORM ---------------------------->
-
-        <form class="form" id="signupForm">
-          <h1 class="form-title">Create Account</h1>
-          <div class="form-message form-message-error"></div>
-          <div class="form-input-wrapper">
-            <input
-              type="text"
-              class="input-item"
-              id="name"
-              autofocus
-              autocomplete="on"
-              placeholder="Name"
-            />
-            <span id="nameError" class="error"></span>
+        <div class="main-wrapper">
+          <div class="left-side-img">
+            <img src="./img/login-img.png" alt="Login Image" />
           </div>
+          <div class="container">
+            <!------------------------- SECOND FORM ---------------------------->
+            <form class="form" id="signupForm">
+              <h1 class="form-title">Create Account</h1>
+              <div class="form-message form-message-error"></div>
+              <div class="form-input-wrapper">
+                <input
+                  type="text"
+                  class="input-item"
+                  id="name"
+                  autofocus
+                  autocomplete="on"
+                  placeholder="Name"
+                />
+                <span id="nameError" class="error"></span>
+              </div>
 
-          <div class="form-input-wrapper">
-            <input
-              type="email"
-              class="input-item"
-              id="email"
-              autofocus
-              autocomplete="on"
-              placeholder="Email Address"
-            />
-            <span id="emailError" class="error"></span>
+              <div class="form-input-wrapper">
+                <input
+                  type="email"
+                  class="input-item"
+                  id="email"
+                  autofocus
+                  autocomplete="on"
+                  placeholder="Email Address"
+                />
+                <span id="emailError" class="error"></span>
+              </div>
+
+              <!---------------------- This is an error message! ---------------------->
+              <div class="form-input-wrapper">
+                <input
+                  type="password"
+                  class="input-item"
+                  id="password"
+                  autofocus
+                  autocomplete="on"
+                  placeholder="Password"
+                />
+                <span id="passwordError" class="error"></span>
+              </div>
+
+              <div class="form-input-wrapper">
+                <input
+                  type="password"
+                  class="input-item"
+                  id="confirmPassword"
+                  autofocus
+                  autocomplete="on"
+                  placeholder="Comfirm password"
+                />
+                <span id="confirmPasswordError" class="error"></span>
+              </div>
+
+              <button class="form-btn" id="submitBtn" type="submit">Sign up</button>
+
+              <p class="form-text">
+                Already have an Account?
+                <a href="" id="linkLogin" class="form-link"> Login in </a>
+              </p>
+      
+            </form>
           </div>
-
-          <!---------------------- This is an error message! ---------------------->
-          <div class="form-input-wrapper">
-            <input
-              type="password"
-              class="input-item"
-              id="password"
-              autofocus
-              autocomplete="on"
-              placeholder="Password"
-            />
-            <span id="passwordError" class="error"></span>
-          </div>
-
-          <div class="form-input-wrapper">
-            <input
-              type="password"
-              class="input-item"
-              id="confirmPassword"
-              autofocus
-              autocomplete="on"
-              placeholder="Comfirm password"
-            />
-            <span id="confirmPasswordError" class="error"></span>
-          </div>
-
-          <button class="form-btn" id="submitBtn" type="submit">Sign up</button>
-
-          <p class="form-text">
-            Already have an Account?
-            <a href="" id="linkLogin" class="form-link"> Login in </a>
-          </p>
-  
-        </form>
-      </div>
+        </div>
     </section>
     <!-- Footer section -->
     <footer class="footer-container">
