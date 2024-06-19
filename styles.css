@@ -71,11 +71,11 @@ h2{
 
 .left-side-img img{
   text-align:center;margin: 0 auto;
-  width: 40%;
+  width: 150px;
   align-self: center;
   justify-self:center;
-  object-fit: cover;
-  height: 100%;
+  object-fit: contain;
+  height: 160px;
   border-radius: 10px;
   position: relative;
 }
