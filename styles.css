@@ -56,9 +56,9 @@ h2{
 .main-wrapper{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin: 0 auto;
-  width: 80%;
+  width: 97%;
   position: relative;
 }
 
