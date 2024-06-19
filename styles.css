@@ -56,10 +56,10 @@ h2{
 .main-wrapper{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
   margin: 0 auto;
-  width: 97%;
+  width: 96%;
   position: relative;
 }
 
