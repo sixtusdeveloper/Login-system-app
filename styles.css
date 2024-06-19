@@ -59,25 +59,25 @@ h2{
   flex-wrap: nowrap;
   gap: 1rem;
   margin: 0 auto;
-  width: 96%;
+  width: 90%;
   position: relative;
 }
 
 .left-side-img{
+  display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.left-side-img img{
-  display: flex;
+.left-side-img img{ 
   text-align:center;
   margin: 10px auto;
-  /* width: 350px; */
+  width: 350px;
   align-items: center;
   justify-items:center;
-  /* object-fit: contain; */
-  /* height: 360px; */
+  object-fit: contain;
+  height: 360px;
   border-radius: 10px;
   position: relative;
 }
