@@ -54,11 +54,12 @@ h2{
 }
 
 .main-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
   margin: 0 auto;
+  width: 80%;
+  position: relative;
 }
 
 .logo {
