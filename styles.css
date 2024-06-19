@@ -320,13 +320,8 @@ h2{
     /*--------------------------- Container --------------------------*/
   .container {
     width: 70%;
-    position: relative;
     margin: 2rem auto;
     padding: 1rem 4.7rem;
-    background: #ffffff;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-  }
   
     .input-item {
       font-size: 13px;
@@ -339,32 +334,20 @@ h2{
 @media only screen and (max-width: 600px) {
   .logo img {
     width: 38%;
-    overflow: hidden; 
-    margin: 1rem auto;
   }
 
   .main-wrapper{
-    display: flex;
     flex-direction: column;
     margin: 3rem auto;
-    gap: 10px;
     margin: 0 auto;
     width: 95%;
-    align-items: center;
-    justify-content: center;
-    /* text-align:center; */
-    position: relative;
   }
 
 
   .container {
     width: 80%;
-    position: relative;
     margin: 2rem auto;
     padding: 1rem 2.7rem;
-    background: #ffffff;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
   }
   
     .input-item {
@@ -392,21 +375,14 @@ h2{
 @media only screen and (max-width: 500px) {
   .logo img {
     width: 38%;
-    overflow: hidden; 
-    margin: 1rem auto;
   }
 
   .main-wrapper{
-    display: flex;
     flex-direction: column;
     margin: 3rem auto;
-    gap: 10px;
     margin: 0 auto;
     width: 98%;
-    align-items: center;
-    justify-content: center;
-    /* text-align:center; */
-    position: relative;
+
   }
   .form-title {
     font-size: 1.2rem;
@@ -415,12 +391,6 @@ h2{
   }
 
   h1{
-    text-align:center;
-    color: #ffffff;
-    font-family: "Playwrite US Trad", cursive;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
     font-size: 1.5rem;
     margin: 1rem auto;
   
@@ -428,12 +398,8 @@ h2{
 
   .container {
     width: 98%;
-    position: relative;
     margin: 2rem auto;
     padding: 1rem 2.5rem;
-    background: #ffffff;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
   }
 
   .left-side-img img{
@@ -445,9 +411,6 @@ h2{
       font-size: 13px;
     }
 
-  .input-item {
-    font-size: 13px;
-  }
 
   /*=========================== .footer-container ========================*/
   .footer-container {
@@ -457,7 +420,6 @@ h2{
 
   .copyright {
     margin-bottom: 1rem;
-    font-size: 14px;
     padding: 1rem auto;
   }
 }
@@ -468,21 +430,14 @@ h2{
 @media only screen and (max-width: 380px) {
   .logo img {
     width: 38%;
-    overflow: hidden; 
-    margin: 1rem auto;
   }
 
   .main-wrapper{
-    display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    gap: 10px;
     margin: 0 auto;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    position: relative;
+    
   }
 
   .form-title {
@@ -492,12 +447,6 @@ h2{
   }
 
   h1{
-    text-align:center;
-    color: #ffffff;
-    font-family: "Playwrite US Trad", cursive;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
     font-size: 1.2rem;
     margin: 1rem auto;
   
@@ -506,12 +455,8 @@ h2{
 
   .container {
     width: 100%;
-    position: relative;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 1rem 1rem;
-    background: #ffffff;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
   }
 
   .left-side-img img{
