@@ -70,12 +70,13 @@ h2{
 }
 
 .left-side-img img{
-  text-align:center;margin: 0 auto;
-  width: 150px;
+  text-align:center;
+  margin: 0 auto;
+  /* width: 350px; */
   align-self: center;
   justify-self:center;
-  object-fit: contain;
-  height: 160px;
+  /* object-fit: contain; */
+  /* height: 360px; */
   border-radius: 10px;
   position: relative;
 }
