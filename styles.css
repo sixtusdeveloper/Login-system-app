@@ -17,12 +17,9 @@ body {
     hsla(194, 95%, 15%, 0.826),
     hsla(152, 75%, 42%, 0.507)
   );
-
-  width: 100%;
   overflow-x: hidden;
-  margin: 0 auto;
+  width: 100%;
   font-family: "Roboto", sans-serif;
-  /* background: var(--primary-color-dark); */
 }
 
 h1{
@@ -56,16 +53,22 @@ h2{
 .main-wrapper{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1rem;
+  margin: 3rem auto;
+  gap: 10px;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  /* text-align:center; */
   position: relative;
 }
 
 .left-side-img{
   display: flex;
   width: 100%;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -73,22 +76,18 @@ h2{
 .left-side-img img{ 
   text-align:center;
   margin: 10px auto;
-  width: 350px;
-  align-items: center;
-  justify-items:center;
-  object-fit: contain;
-  height: 360px;
-  border-radius: 10px;
   position: relative;
+  overflow: hidden;
 }
 .logo {
   text-align: center;
   margin: 1rem auto;
+  overflow: hidden;
 }
 
 .right-side {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 1rem;
 }
 
@@ -102,8 +101,8 @@ h2{
 .container {
   width: 100%;
   position: relative;
-  margin: 3rem auto;
-  padding: 1rem 2.7rem;
+  margin: 0 auto;
+  padding: 14px 4.5rem;
   background: #ffffff;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
@@ -241,34 +240,136 @@ h2{
   color: #555;
 }
 
+
 /*======================== On Mobile devices =====================*/
-@media only screen and (max-width: 850px) {
- 
-/*--------------------------- Container --------------------------*/
+@media only screen and (max-width: 1099px) {
+  .logo img {
+    width: 40%;
+    overflow: hidden; 
+    margin: 1rem auto;
+  }
+  .main-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 1.4rem auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: 98%;
+    
+  }
+
+  /*--------------------------- Container --------------------------*/
 .container {
-  width: 60%;
+  width: 85%;
   position: relative;
-  margin: 3rem auto;
-  padding: 1rem 2.7rem;
+  margin: 2rem auto;
+  padding: 1rem 4.3rem;
   background: #ffffff;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
 }
+
 }
 
 /*======================== On Mobile devices =====================*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 999px) {
   .logo img {
-    width: 48%;
+    width: 40%;
+    overflow: hidden; 
     margin: 1rem auto;
+  }
+  .main-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 1.4rem auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: 98%;
+    
   }
 
   /*--------------------------- Container --------------------------*/
-  .container {
-    width: 95%;
-    margin: 2rem auto;
-    padding: 2rem;
+.container {
+  width: 100%;
+  position: relative;
+  margin: 2rem auto;
+  padding: 1rem 4rem;
+  background: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+}
+
+}
+/*======================== On Mobile devices =====================*/
+@media only screen and (max-width: 860px) {
+  .logo img {
+    width: 38%;
+    overflow: hidden; 
+    margin: 1rem auto;
   }
+  .main-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: 90%;
+    
+  }
+
+    /*--------------------------- Container --------------------------*/
+  .container {
+    width: 70%;
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem 4.7rem;
+    background: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+  }
+  
+    .input-item {
+      font-size: 13px;
+    }
+}
+ 
+
+
+/*======================== On Mobile devices =====================*/
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 38%;
+    overflow: hidden; 
+    margin: 1rem auto;
+  }
+
+  .main-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    /* text-align:center; */
+    position: relative;
+  }
+
+
+  .container {
+    width: 80%;
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem 2.7rem;
+    background: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+  }
+  
+    .input-item {
+      font-size: 13px;
+    }
 
   .input-item {
     font-size: 13px;
@@ -277,13 +378,167 @@ h2{
   /*=========================== .footer-container ========================*/
   .footer-container {
     margin: 0 auto;
-    padding: 3rem;
+    padding: 1rem;
   }
 
   .copyright {
     margin-bottom: 1rem;
     font-size: 14px;
-    padding: 2rem auto;
+    padding: 1rem auto;
+  }
+}
+
+/*======================== On Mobile devices =====================*/
+@media only screen and (max-width: 500px) {
+  .logo img {
+    width: 38%;
+    overflow: hidden; 
+    margin: 1rem auto;
+  }
+
+  .main-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    /* text-align:center; */
+    position: relative;
+  }
+  .form-title {
+    font-size: 1.2rem;
+    padding: 10px;
+    
+  }
+
+  h1{
+    text-align:center;
+    color: #ffffff;
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  
+  }
+
+  .container {
+    width: 98%;
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem 2.5rem;
+    background: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+  }
+
+  .left-side-img img{
+    width: 300px;
+    height: 200px;
+  }
+  
+    .input-item {
+      font-size: 13px;
+    }
+
+  .input-item {
+    font-size: 13px;
+  }
+
+  /*=========================== .footer-container ========================*/
+  .footer-container {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    padding: 1rem auto;
+  }
+}
+
+
+
+/*======================== On Mobile devices =====================*/
+@media only screen and (max-width: 380px) {
+  .logo img {
+    width: 38%;
+    overflow: hidden; 
+    margin: 1rem auto;
+  }
+
+  .main-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    position: relative;
+  }
+
+  .form-title {
+    font-size: 1.2rem;
+    padding: 10px;
+    
+  }
+
+  h1{
+    text-align:center;
+    color: #ffffff;
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  
+  }
+
+
+  .container {
+    width: 100%;
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem 1rem;
+    background: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+  }
+
+  .left-side-img img{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+    .input-item {
+      font-size: 13px;
+    }
+
+  .input-item {
+    font-size: 13px;
+  }
+
+  /*=========================== .footer-container ========================*/
+  .footer-container {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    padding: 1rem auto;
   }
 }
 
