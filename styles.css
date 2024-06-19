@@ -54,9 +54,10 @@ h2{
 }
 
 .main-wrapper{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin: 0 auto;
   width: 97%;
   position: relative;
