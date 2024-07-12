@@ -15,13 +15,12 @@ body {
   background: linear-gradient(
     to right,
     hsla(194, 95%, 15%, 0.826),
-    hsla(152, 75%, 42%, 0.507)
+    hsla(109, 48%, 21%, 0.957)
   );
   overflow-x: hidden;
   width: 100%;
   font-family: "Roboto", sans-serif;
 }
-
 h1{
   text-align:center;
   color: #ffffff;
@@ -29,40 +28,25 @@ h1{
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  font-size: 2rem;
-  margin: 1rem auto;
-
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
-
-h2{
-  text-align:center;
-  color: #ffffff;
-  font-family: "Playwrite US Trad", cursive;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 1rem;
-  margin: 0 auto;
-}
-
 .main-container {
   width: 100%;
-  /* overflow-x: hidden; */
 }
-
-.main-wrapper{
+.main-wrapper{  
   display: flex;
   flex-direction: row;
-  margin: 3rem auto;
+  margin: 1rem auto;
   gap: 10px;
+  padding: 1rem;
   margin: 0 auto;
   width: 85%;
   align-items: center;
   justify-content: center;
-  /* text-align:center; */
   position: relative;
 }
-
 .left-side-img{
   display: flex;
   width: 100%;
@@ -72,7 +56,6 @@ h2{
   margin: 0 auto;
   padding: 1rem;
 }
-
 .left-side-img img{ 
   text-align:center;
   margin: 10px auto;
@@ -81,22 +64,18 @@ h2{
 }
 .logo {
   text-align: center;
-  margin: 3rem auto;
+  margin: 1rem auto;
   overflow: hidden;
 }
-
 .right-side {
   width: 100%;
-  /* margin: 0 auto; */
   padding: 1rem;
 }
-
 .logo img {
-  width: 30%;
+  width: 20%;
   overflow: hidden;
   position: relative;
 }
-
 /*--------------------------- Container --------------------------*/
 .container {
   width: 100%;
@@ -107,22 +86,17 @@ h2{
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
 }
-
-
 .form > *:first-child {
   margin-top: 0;
 }
-
 .form > *:last-child {
   margin-bottom: 0;
 }
-
 .error{
   font-size: 14px;
   color: red;
   margin-top: 9px;
 }
-
 .form-title {
   font-size: 2rem;
   font-family: inherit;
@@ -131,11 +105,9 @@ h2{
   padding: 1.5rem;
   text-transform: capitalize;
 }
-
 .form-input-wrapper {
   margin-bottom: 1rem;
 }
-
 .input-item {
   display: block;
   background: aliceblue;
@@ -148,27 +120,22 @@ h2{
   border-radius: var(--border-radius);
   transition: background 0.2s, border-color 0.2s;
 }
-
 .input-item::placeholder {
   font-size: 0.85rem;
 }
-
 .input-item:focus {
   border-color: rgb(209, 223, 235);
   background: var(--white-color);
 }
-
 .form__input-error {
   color: var(--error-color);
   border-color: var(--error-color) !important;
 }
-
 .form_input-error__message {
   margin-top: 0.5rem;
   font-size: 0.85rem;
   color: var(--error-color);
 }
-
 .form-btn {
   background: var(--primary-color);
   color: var(--white-color);
@@ -182,31 +149,25 @@ h2{
   margin: 1rem auto;
   border-radius: var(--border-radius);
 }
-
 .form-btn :hover {
   background: var(--primary-color-dark);
 }
-
 .form-btn:active {
   transform: scale(0.98);
 }
-
 .form-text {
   text-align: Center;
   padding: 1rem 0;
   color: #555;
 }
-
 .form-link {
   color: var(--secondary-color);
   text-decoration: none;
   cursor: pointer;
 }
-
 .form-link:hover {
   text-decoration: underline;
 }
-
 /*=========================== .footer-container ========================*/
 .footer-container {
   background-color: aliceblue;
@@ -215,7 +176,6 @@ h2{
   padding: 12px;
   text-align: center;
 }
-
 .footer-row {
   position: relative;
   display: flex;
@@ -225,13 +185,11 @@ h2{
   padding: 1rem;
   text-align: center;
 }
-
 .footer-row i.fab {
   color: #333;
   margin: 12px;
   font-size: 1.1rem;
 }
-
 /*=================== .copyright =========================*/
 .copyright {
   text-align: center;
@@ -239,8 +197,6 @@ h2{
   font-size: 1rem;
   color: #555;
 }
-
-
 /*======================== On Mobile devices =====================*/
 @media only screen and (max-width: 1099px) {
   .logo img {
@@ -257,7 +213,6 @@ h2{
     width: 98%;
     
   }
-
   /*--------------------------- Container --------------------------*/
 .container {
   width: 85%;
@@ -265,9 +220,7 @@ h2{
   margin: 2rem auto;
   padding: 1rem 4.3rem;
 }
-
 }
-
 /*======================== On Mobile devices =====================*/
 @media only screen and (max-width: 999px) {
   .logo img {
@@ -284,7 +237,6 @@ h2{
     width: 98%;
     
   }
-
   /*--------------------------- Container --------------------------*/
 .container {
   width: 100%;
@@ -324,7 +276,6 @@ h2{
   .logo img {
     width: 38%;
   }
-
   .main-wrapper{
     flex-direction: column;
     margin: 3rem auto;
@@ -336,21 +287,17 @@ h2{
     margin: 2rem auto;
     padding: 1rem 2.7rem;
   }
-  
-    .input-item {
-      font-size: 13px;
-    }
-
   .input-item {
     font-size: 13px;
   }
-
+  .input-item {
+    font-size: 13px;
+  }
   /*=========================== .footer-container ========================*/
   .footer-container {
     margin: 0 auto;
     padding: 1rem;
   }
-
   .copyright {
     margin-bottom: 1rem;
     font-size: 14px;
@@ -363,7 +310,6 @@ h2{
   .logo img {
     width: 38%;
   }
-
   .main-wrapper{
     flex-direction: column;
     margin: 3rem auto;
@@ -376,7 +322,6 @@ h2{
     padding: 10px;
     
   }
-
   h1{
     font-size: 1.5rem;
     margin: 1rem auto;
@@ -388,12 +333,10 @@ h2{
     margin: 2rem auto;
     padding: 1rem 2.5rem;
   }
-
   .left-side-img img{
     width: 300px;
     height: 200px;
   }
-  
     .input-item {
       font-size: 13px;
     }
@@ -402,21 +345,16 @@ h2{
     margin: 0 auto;
     padding: 1rem;
   }
-
   .copyright {
     margin-bottom: 1rem;
     padding: 1rem auto;
   }
 }
-
-
-
 /*======================== On Mobile devices =====================*/
 @media only screen and (max-width: 380px) {
   .logo img {
     width: 38%;
   }
-
   .main-wrapper{
     flex-direction: column;
     margin: 2rem auto;
@@ -424,33 +362,25 @@ h2{
     width: 100%;
     
   }
-
   .form-title {
     font-size: 1.2rem;
     padding: 10px;
-    
   }
-
   h1{
     font-size: 1.2rem;
     margin: 1rem auto;
-  
   }
-
-
   .container {
     width: 100%;
     margin: 1rem auto;
     padding: 1rem 1rem;
   }
-
   .left-side-img img{
     width: 300px;
     height: 200px;
     margin: 0 auto;
     text-align: center;
   }
-  
     .input-item {
       font-size: 13px;
     }
@@ -458,13 +388,11 @@ h2{
   .input-item {
     font-size: 13px;
   }
-
   /*=========================== .footer-container ========================*/
   .footer-container {
     margin: 0 auto;
     padding: 1rem;
   }
-
   .copyright {
     margin-bottom: 1rem;
     font-size: 14px;

@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function submitData() {
     console.log("submitData function is called");
     console.log("Successfully Submitted");
+    
+    // Store user data in localStorage
+    localStorage.setItem("name", nameInput.value);
+    localStorage.setItem("email", emailInput.value);
+    localStorage.setItem("password", passwordInput.value);
+
     window.location.href = "success.html"; // Redirect to success page
   }
 
@@ -55,6 +61,68 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Define the submitData function before adding the event listener
+//   function submitData() {
+//     console.log("submitData function is called");
+//     console.log("Successfully Submitted");
+//     window.location.href = "success.html"; // Redirect to success page
+//   }
+
+//   const form = document.getElementById("signupForm");
+//   const nameInput = document.getElementById("name");
+//   const emailInput = document.getElementById("email");
+//   const passwordInput = document.getElementById("password");
+//   const confirmPasswordInput = document.getElementById("confirmPassword");
+
+//   form.addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent default form submission behavior
+    
+//     let isValid = true;
+
+//     // Reset previous error messages
+//     const errorFields = document.querySelectorAll(".error");
+//     errorFields.forEach(function (errorField) {
+//       errorField.textContent = "";
+//     });
+
+//     // Validate Name
+//     if (nameInput.value.trim() === "") {
+//       document.getElementById("nameError").textContent = "Name is required";
+//       isValid = false;
+//     }
+
+//     // Validate Email
+//     if (!emailInput.value.trim().match(/^\S+@\S+\.\S+$/)) {
+//       document.getElementById("emailError").textContent = "Enter a valid email";
+//       isValid = false;
+//     }
+
+//     // Validate Password
+//     if (passwordInput.value.length < 8) {
+//       document.getElementById("passwordError").textContent =
+//         "Password must be at least 8 characters long";
+//       isValid = false;
+//     }
+
+//     // Validate Confirm Password
+//     if (confirmPasswordInput.value !== passwordInput.value) {
+//       document.getElementById("confirmPasswordError").textContent =
+//         "Passwords do not match";
+//       isValid = false;
+//     }
+
+//     // Redirect to success page if all validations pass
+//     if (isValid) {
+//       submitData(); // Call the submitData function for redirection
+//     }
+//   });
+// });
 
 
 
